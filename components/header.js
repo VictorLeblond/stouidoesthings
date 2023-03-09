@@ -7,10 +7,10 @@ class Header extends HTMLElement {
       this.innerHTML = `
       <div class="mainNav">
       <a class="mainButton" href="https://vicleblond.com">Home</a>
-        <a class="mainButton" href="socials">Socials</a>
-        <a class="mainButton" href="stuff">Stuff</a>
-        <a class="mainButton" href="about">About</a>
-  </div>
+        <a class="mainButton" href="https://vicleblond.com/socials">Socials</a>
+        <a class="mainButton" href="https://vicleblond.com/stuff">Stuff</a>
+        <a class="mainButton" href="https://vicleblond.com/about">About</a>
+      </div>
       `;
     }
   }
