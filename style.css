@@ -1,0 +1,72 @@
+body, footer{
+    background-color:  rgb(60,19,97);
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+}
+
+.mainNav{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(82,46,124);
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.mainNav a {
+    text-decoration: none;
+    background-color:  rgb(82,46,124);
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Arial Black", sans-serif;
+    font-size: 1.8rem;
+    padding: 15px;
+    text-align: center;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.mainNav a:hover{
+    background-color:  rgb(124,82,149);
+}
+
+.mainNav a:active{
+    background-color:  rgb(124,82,149);
+}
+
+.credits{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.bodydiv{
+    background-color: rgb(79, 48, 115);
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin:1.5vh auto 1.5vh;
+    padding: 1.5vh 0px 1.5vh ;
+    color :white;
+    font-family: "Arial Black", sans-serif;
+}
+
+.platypus{
+    width: 300px;
+    height: 300px;
+}
+
+.chicken{
+    text-decoration: none;
+}
