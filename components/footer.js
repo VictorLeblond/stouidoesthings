@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <p> &copy 2023 Victor Leblond </p>
-      <a class="credits" href = "credits/index.html"> credits </a>
+      <a class="credits" href = "https://vicleblond.com/credits"> credits </a>
       `;
     }
   }
