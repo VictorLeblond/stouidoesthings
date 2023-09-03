@@ -20,6 +20,7 @@ footer p{
 }
 
 .mainNav a {
+    width: 100%;
     text-decoration: none;
     background-color:  rgb(82,46,124);
     border-style: none;
