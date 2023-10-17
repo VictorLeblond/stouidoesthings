@@ -74,11 +74,15 @@ footer p{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .grid-item{
     text-align: center;
-    width: 50%;
+    width: 100%;
+    margin: 5%;
+}
+
+.grid-image{
+    width: 100%;
 }
