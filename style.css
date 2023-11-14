@@ -66,6 +66,9 @@ footer p{
 .headliner{
     font-size: 34px;
 }
+.marker{
+    font-size: 28px;
+}
 .standard-paragraph{
     font-size: 18px; font-family: times;
 }
@@ -81,8 +84,7 @@ footer p{
 
 .pixel-art-grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 .grid-container{
     display: grid;
