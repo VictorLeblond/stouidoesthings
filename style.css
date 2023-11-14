@@ -79,8 +79,16 @@ footer p{
 }
 .grid-item{
     text-align: center;
-    width: 100%;
-    margin: 5%;
+    width: 98%;
+    margin: 1%;
+}
+.grid-text{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    padding: 10%;
+    background-color: black;
 }
 
 .grid-image{
