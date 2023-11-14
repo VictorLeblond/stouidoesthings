@@ -83,12 +83,10 @@ footer p{
     margin: 1%;
 }
 .grid-text{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%,-95%);
+    transform: translate(0,-95%);
     padding: 10%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.375);
+    color: white;
 }
 
 .grid-image{
