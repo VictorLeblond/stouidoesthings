@@ -63,6 +63,13 @@ footer p{
     font-family: "Arial Black", sans-serif;
 }
 
+.headliner{
+    font-size: 34px;
+}
+.standard-paragraph{
+    font-size: 18px; font-family: times;
+}
+
 .platypus{
     width: 50%;
     height: 50%;
@@ -89,7 +96,7 @@ footer p{
 }
 .grid-text{
     transform: translate(0,-95%);
-    padding: 10%;
+    padding: 2%;
     background-color: rgba(0, 0, 0, 0.375);
     color: white;
 }
