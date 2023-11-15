@@ -82,6 +82,11 @@ footer p{
     text-decoration: none;
 }
 
+.links{
+    text-decoration: none;
+    color: white;
+}
+
 .pixel-art-grid-container{
     display: grid;
     grid-template-columns: 1fr;
