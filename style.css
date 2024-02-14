@@ -86,6 +86,11 @@ footer p{
     text-decoration: none;
     color: white;
 }
+.linksBIG{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
 
 .pixel-art-grid-container{
     display: grid;
