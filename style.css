@@ -128,3 +128,6 @@ footer p{
 .grid-image{
     width: 100%;
 }
+.grid-image-half{
+    width: 50%;
+}
