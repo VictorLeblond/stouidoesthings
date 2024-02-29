@@ -74,8 +74,8 @@ footer p{
 }
 
 .platypus{
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
 }
 
 .chicken{
@@ -94,7 +94,7 @@ footer p{
 
 .pixel-art-grid-container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .pixel-art-item{
     padding: 5%;
