@@ -19,20 +19,14 @@
     <div class="bodydiv">
 
         <div class="header">Action Rpg Prototype</div><br><br>
-        <div class="standard-paragraph">his is a small project presenting a 3C (character, control, camera). I've tried
+        <div class="standard-paragraph">This is a small project presenting a 3C (character, control, camera). I've tried
             replicating a dark souls / WoW character controller.
             The core of the project was made in april 2021 and I polished it in March 2024 to make it presentable.
             Polishing included : bug fixing, UI sprites and sounds.
             It was a very good learning experience as I was able to learn useful parts present is these types of games
-            like :<br><br>
-
-            - Enemy pathfinding<br>
-            - An inventory system<br>
-            - Animation based combat<br>
-            - 3D asset making<br><br></div>
+            like : Enemy pathfinding, An inventory system, Animation based combat, Abilities/spells and 3D asset making<br><br></div>
         <div class="grid-container2x2">
-            <div class="grid-item">
-                The game started as a moba-like game style, where you click at the position you want to go and the
+            <div class="grid-item"><div class="standard-paragraph">The game started as a moba-like game style, where you click at the position you want to go and the
                 player follows a path to this destination.
                 That required coding a pathfinding system. Luckily, the A* Pathfinding project made by Arongran Berg
                 provides a very well made and strong system. I simply built upon it with
@@ -40,12 +34,13 @@
                 following it with a controller. <br>
                 I wasn't satisfied with the way the player moved, so I implemented it on the enemy and gave the player a
                 standard WASD platformer-like
-                controller.<br><br>
+                controller.</div>
             </div>
+            <div class="grid-image"><img src="Pathfinding.gif"></div><br><br>
         </div>
         <div class="grid-container2x2">
-            <div class="grid-item">
-                I also implemented an inventory system with slots, this demo features a single slot for weapon. But the
+            <div class="grid-image"><img src="Items.gif"></div>
+            <div class="grid-item"><div class="standard-paragraph">I also implemented an inventory system with slots, this demo features a single slot for weapon. But the
                 system
                 can handle multiple types of
                 equippables (helmet, boots, etc...). The biggest challenge in these kind of systems, for me, is handling
@@ -54,34 +49,36 @@
                 flexible enough data structure to create new items easily. Luckily, unity provides an efficient Event
                 System and
                 Scriptable Objects to deal
-                with these challenges easily.
+                with these challenges easily. The game has an ability system that works very similarly to the inventory sytem. Every spell can be coded and introduced into the system easily.
+                <br><br></div>
+                
+            </div>
+        </div>
+        <div class="grid-container2x2">
+            <div class="grid-item"><div class="standard-paragraph">Next, the most time consuming part of this project was handling animaton and player states (idle, running,
+                attacking, etc..). My system
+                can easily be approved, and I made a lot of back and fort unity-blender as I couldn't find an efficient
+                approach
+                to creating attack combos
+                animation like in Dark Souls. It involves multiples states where depending on the player's input, you either
+                continue the combo or go back to
+                idle slowly. Anyway, it was very tedious and unintuitive to implement and if I had to do it again I would
+                put
+                more time into
+                making an animation controller handling what animation plays when, for how long and which is next...
+                </div>
+                <div class="grid-image"><img src="Frog.gif"></div>
                 <br><br>
             </div>
         </div>
         <div class="grid-container2x2">
-            <div class="grid-item">
-                Next, the most time consuming part of this project was handling animaton and player states (idle, running,
-        attacking, etc..). My system
-        can easily be approved, and I made a lot of back and fort unity-blender as I couldn't find an efficient
-        approach
-        to creating attack combos
-        animation like in Dark Souls. It involves multiples states where depending on the player's input, you either
-        continue the combo or go back to
-        idle slowly. Anyway, it was very tedious and unintuitive to implement and if I had to do it again I would
-        put
-        more time into
-        making an animation controller handling what animation plays when, for how long and which is next...
-        <br><br>
-            </div>
-        </div>
-        <div class="grid-container2x2">
-            <div class="grid-item">
-                Finally, a huge part of making this was creating all the assets necessary for this scene. I was not familiar
-        with low-poly style
-        asset creation and I learned a lot about the fundementals of making 3D assets. I was finally able to develop
-        a
-        workflow and create
-        consistent assets that I liked.
+            <div class="grid-item"><div class="standard-paragraph">Finally, a huge part of making this was creating all the assets necessary for this scene. I was not familiar
+                with low-poly style
+                asset creation and I learned a lot about the fundementals of making 3D assets. I was finally able to develop
+                a
+                workflow and create
+                consistent assets that I liked.</div>
+                
         <br><br>
             </div>
         </div>
