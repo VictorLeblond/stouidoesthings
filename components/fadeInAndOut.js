@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	
-	$("body").css("display", "none");
+	$("bodydiv").css("display", "none");
 
-    $("body").fadeIn(2000);
+    $("bodydiv").fadeIn(2000);
     
 	$("a.transition").click(function(event){
 		event.preventDefault();
 		linkLocation = this.href;
-		$("body").fadeOut(1000, redirectPage);		
+		$("bodydiv").fadeOut(1000, redirectPage);		
 	});
 		
 	function redirectPage() {
