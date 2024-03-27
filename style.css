@@ -4,7 +4,7 @@ body, footer{
 }
 
 footer p{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: "Arial", sans-serif;
     font-size: 14px;
@@ -24,7 +24,7 @@ footer p{
     text-decoration: none;
     background-color:  rgb(205,194,245);
     border-style: none;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
     flex-shrink: 0;
     font-family: "Arial Black", sans-serif;
