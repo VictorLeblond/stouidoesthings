@@ -1,5 +1,5 @@
 body, footer{
-    background-color:  (230,225,249);
+    background-color:  rgb(198,183,254);
     text-align: center;
 }
 
@@ -13,7 +13,7 @@ footer p{
 .mainNav{
     margin: 0;
     padding: 0;
-    background-color: rgb	(213,205,243);
+    background-color: rgb(205,194,245);
     text-align: center;
     overflow: hidden;
     align-items: center;
@@ -22,7 +22,7 @@ footer p{
 .mainNav a {
     width: 100%;
     text-decoration: none;
-    background-color:  rgb	(213,205,243);
+    background-color:  rgb(205,194,245);
     border-style: none;
     color: #FFFFFF;
     cursor: pointer;
@@ -38,18 +38,18 @@ footer p{
 }
 
 .mainNav a:hover{
-    background-color:  rgb	(205,194,245);
+    background-color:  rgb(124,82,149);
 }
 
 .mainNav a:active{
-    background-color:  rgb(198,183,254);
+    background-color:  rgb(124,82,149);
 }
 
 .credits{
     text-decoration: none;
     font-size: 12px;
     font-family: sans-serif;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .bodydiv{
@@ -59,7 +59,7 @@ footer p{
     align-items: center;
     margin:1.5vh auto 1.5vh;
     padding: 1.5vh;
-    color :rgb(0, 0, 0);
+    color :white;
     font-family: "Arial Black", sans-serif;
 }
 
