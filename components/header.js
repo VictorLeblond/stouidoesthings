@@ -8,7 +8,7 @@ class Header extends HTMLElement {
       <div class="mainNav">
       <a class="mainButton" href="https://vicleblond.com">Home</a>
         <a class="mainButton" href="https://vicleblond.com/socials">Socials</a>
-        <a class="mainButton" href="https://vicleblond.com/stuff">Stuff</a>
+        <a class="mainButton" href="https://vicleblond.com/projects">Projects</a>
         <a class="mainButton" href="https://vicleblond.com/about">About</a>
       </div>
       `;
