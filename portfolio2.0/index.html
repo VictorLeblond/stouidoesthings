@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Basic 3D World</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/"
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module">
+    window.canvas = document.getElementById('canvas')
+    window.canvas.width = innerWidth
+    window.canvas.height = innerHeight
+    window.iw = innerWidth
+    window.ih = innerHeight
+  </script>
+  <script src="./ocean.js" type="module"></script>
+  <script src="./frog.js" type="module">
+  </script>
+</head>
+
+<body>
+  <div class="pressStart" id="start">Click on the screen to enter</div>
+  <div class="header">
+    <div class="left">Victor Leblond</div>
+    <div class="center">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="right">
+      <a href="https://github.com/VictorLeblond" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/victor-leblond-50b43a268/" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <canvas id="canvas"><div id="root"></canvas></canvas>
+</body>
+
+</html>
