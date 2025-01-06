@@ -1,0 +1,52 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'PixelOperator', sans-serif;
+    font-size: x-large;
+    color: #e9cbf7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #310943;
+}
+.tab-container {
+    width: 900px;
+    height:300px;
+    margin: auto;
+    background-color: transparent;
+    background: #652285;
+}
+.tab-content{
+    padding: 20px;
+    animation: 0.5s ease-in-out;
+    border: 1px solid #470b63;
+}
+.tab-link {
+    flex: 1;
+    text-align: center;
+}
+
+.tabs{
+    display: flex;
+    align-items: felx-end;
+    padding:0;
+    margin:0;
+    list-style: none;
+    background-color: transparent;
+}
+@font-face{
+    font-family: "PixelOperator";
+    src : url('./fonts/PixelOperator.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "PixelOperator";
+    src : url('./fonts/PixelOperatorSC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
