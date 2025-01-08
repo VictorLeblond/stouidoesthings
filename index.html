@@ -13,9 +13,9 @@
 <body>
     <header>
         <div class="tab-container">
-                <h1>
-                    <b>vicleblond.com</b>
-                </h1>
+            <h1>
+                <b>vicleblond.com</b>
+            </h1>
 
             <div class=tabs>
                 <button class="tab-link" data-tab="home">home</button>
@@ -31,8 +31,10 @@
                     <div class="box">
                         <p><b>welcome to my website!</b>
                             <br><br>I'm in the middle of rebuilding everything, expect some drastic changes in the
-                            upcomming days/weeks :D
+                            upcomming days/weeks :D<br><br>
+
                         </p>
+                        <img src="./sprites/gangchill.png">
                     </div>
                 </div>
                 <div class="status">
@@ -45,7 +47,12 @@
                     <div class="box">extra</div>
                 </div>
                 <div class="div9">
-                    <div class="box">Art</div>
+                    <div class="box">
+                        <a href="vicleblond.com/sandandslash"><img src="./sprites/snsbutton.png"
+                                style="border: 1px solid black; "></a>
+                        <img src="./sprites/explobot.png" style="border: 1px solid black; ">
+                        <img src="./sprites/dreamcatchersbutton.png" style="border: 1px solid black; ">
+                    </div>
                 </div>
                 <div class="lastPlayed">
                     <div class="box">
@@ -54,23 +61,48 @@
                     </div>
                 </div>
                 <div class="neighbors">
-                    <div class="box"><b>NEIGHBORS</b></div>
+                    <div class="box">
+                        <div class="title"><b>NEIGHBORS</b></div><br>
+                        <a href="https://july.lol"><img src="https://july.lol/img/julybutton.gif" alt="july.lol"></a>
+                        <a href="https://rice.place/" target="_blank"><img
+                                src="https://rice.nekoweb.org/button/riceplace.png"></a>
+                        <a href="https://frequency-modulator.nekoweb.org/"><img
+                                src="https://frequency-modulator.nekoweb.org/fm.jpg"></a>
+                        <a href="https://melankorin.net/"><img
+                                src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
+                        <a href="https://webfish.neocities.org"><img
+                                src="https://webfish.neocities.org/new/webfish.png"></a>
+                        <a href="https://cyberdemon.nekoweb.org/"><img src="https://cyberdemon.nekoweb.org/button.png">
+                        </a>
+                        <a href="https://joo.sh/" target="_blank"><img
+                                src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
+                        <div class="linkme">link me : </div>
+                    </div>
                 </div>
                 <div class="logs">
                     <div class="box">
 
                         <div class="tab-container">
-                            <div class="tabs">
-                                <button class="tab-link" data-tab="updates">updates</button>
-                                <button class="tab-link" data-tab="todos">to-do's</button>
+                            <div class=tabs>
+                                <button class="tab-link-logs" data-tab="updates">updates</button>
+                                <button class="tab-link-logs" data-tab="todos">todos</button>
                             </div>
                         </div>
-                        <div class="tabs-content-container" style="height: 200px;">
-                            <div class="tab-content" id="updates">
-                                Updates
+                        <div class="tabs-content-container-logs" style="height: 200px;">
+                            <div class="tab-content-logs" id="updates">
+                                <button class="collapsible">v1.1.8.1</button>
+                                <div class="collapsible-content">
+                                    hello internet!<br>
+                                    - added home page
+                                </div>
                             </div>
-                            <div class="tab-content hidden" id="todos">
-                                Todos
+                            <div class="tab-content-logs hidden" id="todos">
+                                <dl>
+                                    <dt>short term</dt>
+                                    <dd>- </dd>
+                                    <dt>long term</dt>
+                                    <dd>- </dd>
+                                </dl>
                             </div>
                         </div>
                     </div>
@@ -78,7 +110,25 @@
             </div>
         </div>
         <div class="tab-content hidden" id="work">
-            <p>Here will lie all my works, im currently porting everything from by old website.</p>
+            <div class="work-grid" </div>
+                <div class="work">
+                    <div class="box">
+                        <div class="tab-content-nav" id="3d"></div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="box">
+                        <div class="title"><b>Navigation</b></div><br>
+                        <div class="navigation-tabs">
+                            <button class="tab-link-nav" data-tab="3d">3D</button>
+                            <button class="tab-link-nav" data-tab="assets">assets/sprites</button>
+                            <button class="tab-link-nav" data-tab="animation">animation</button>
+                            <button class="tab-link-nav" data-tab="games">games</button>
+                            <button class="tab-link-nav" data-tab="music">music</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tab-content hidden" id="about">
             <p>Here you will get to know about me</p>

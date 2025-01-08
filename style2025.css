@@ -17,7 +17,7 @@ body {
     width: 900px;
     margin: auto;
     font-family: 'PixelOperator', sans-serif;
-    font-size: x-large;
+    font-size: larger;
     background-image: url('./sprites/bg1.png');
 }
 
@@ -26,6 +26,8 @@ footer {
     font-size: 16px;
     width: 900px;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #listening {
@@ -59,12 +61,46 @@ footer {
     border: 2px solid black
 }
 
-#listeningStatus{
+#listeningStatus {
+    font-weight: bold;
+    border-bottom: 1px dotted black;
+}
+
+.title {
     font-weight: bold;
     border-bottom: 1px dotted black;
 }
 
 .tab-content {
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.navigation-tabs {}
+
+.tab-link-nav {
+    font-family: 'PixelOperator';
+    font-size: large;
+    flex: 1;
+    text-align: center;
+    background-color: rgb(224, 218, 249);
+    margin-bottom: 5px;
+}
+
+.tab-content-nav {
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.navigation-tabs button {
+    display: grid;
+    height: auto;
+    justify-items: stretch;
+}
+
+.tab-content-logs {
     margin: auto;
     padding: 5px;
     border: 1px solid black;
@@ -76,12 +112,30 @@ footer {
     background-color: aliceblue;
 }
 
+.tabs-content-container-logs {
+    width: 100%;
+    background-color: aliceblue;
+    overflow-y: scroll;
+}
+
+.tabs-content-container-logs::-webkit-scrollbar {
+    display: none;
+}
+
 .tab-link {
     font-family: 'PixelOperator';
     font-size: large;
     flex: 1;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(224, 218, 249);
+}
+
+.tab-link-logs {
+    font-family: 'PixelOperator';
+    font-size: large;
+    flex: 1;
+    text-align: center;
+    background-color: rgb(224, 218, 249);
 }
 
 .tabs {
@@ -89,17 +143,71 @@ footer {
     align-items: felx-end;
     padding: 0;
     margin: 0;
+    height: 40px;
     list-style: none;
     background-color: transparent;
+    cursor: pointer;
+    transition-duration: 0.35s;
 }
 
+.tab-link:hover {
+    background-color: rgb(179, 171, 213);
+}
+
+.tab-link-logs:hover {
+    background-color: rgb(179, 171, 213);
+}
+.tab-link-nav:hover {
+    background-color: rgb(179, 171, 213);
+}
+
+.collapsible {
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+
+.active,
+.collapsible:after {
+    content: "\2212";
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: transparent;
+}
 
 .box {
     border: 1px solid black;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 5px;
 }
+
+.work-grid {
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-template-rows: 900px;
+    gap: 5px;
+}
+
+.work {}
+
+.navigation {}
 
 .home-grid {
     display: grid;
@@ -147,6 +255,7 @@ footer {
     grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 6;
+    width: 315px;
 }
 
 .logs {
@@ -154,6 +263,7 @@ footer {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 6;
+    width: 315px;
 }
 
 @font-face {
