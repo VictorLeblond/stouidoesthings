@@ -1,3 +1,7 @@
+:root{
+    --backgroundSize: 48px;
+}
+
 .hidden {
     display: none;
 }
@@ -19,6 +23,8 @@ body {
     font-family: 'PixelOperator', sans-serif;
     font-size: larger;
     background-image: url('./sprites/bg1.png');
+    background-size: var(--backgroundSize);
+    animation: movingBackground 5s linear infinite;
 }
 
 footer {
@@ -77,7 +83,9 @@ footer {
     border: 1px solid black;
 }
 
-.navigation-tabs {}
+.navigation-tabs {
+    display: grid;
+}
 
 .tab-link-nav {
     font-family: 'PixelOperator';
@@ -170,6 +178,12 @@ footer {
     font-size: 15px;
 }
 
+.grid-explobot{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 5px;
+}
 
 .active,
 .collapsible:after {
@@ -198,10 +212,21 @@ footer {
     padding: 5px;
 }
 
+.display{
+    width: 100%;
+    height: auto;
+}
+
+.displayer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;gap: 5px;
+}
+
 .work-grid {
     display: grid;
     grid-template-columns: auto 250px;
-    grid-template-rows: 900px;
+    grid-template-rows: auto;
     gap: 5px;
 }
 
@@ -264,6 +289,11 @@ footer {
     grid-column-start: 3;
     grid-row-start: 6;
     width: 315px;
+}
+
+@keyframes movingBackground{
+    from{ background-position: 0 0;}
+    to{ background-position: var(--backgroundSize) var(--backgroundSize);}
 }
 
 @font-face {
