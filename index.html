@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name=""viewport" content="width=device-width, initial-scale=1.0">
-        <title>vicleblond.com</title>
-        <link rel="stylesheet" href="./style2025.css">
-        <script src="./js/script.js"></script>
-        <script src="./js/lastfm.js"></script>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="" viewport" content="width=device-width, initial-scale=1.0">
+    <title>vicleblond.com</title>
+    <link rel="stylesheet" href="./style2025.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/lastfm.js"></script>
+</head>
+
+<body>
+    <header>
         <div class="tab-container">
-            <div class = tabs>
+                <h1>
+                    <b>vicleblond.com</b>
+                </h1>
+
+            <div class=tabs>
                 <button class="tab-link" data-tab="home">home</button>
                 <button class="tab-link" data-tab="work">work</button>
                 <button class="tab-link" data-tab="about">about</button>
             </div>
-            <div class="tab-content" id="home">
-                <h1><b>Welcome to my website!</b></h1>
-            </div>
-            <div class="tab-content hidden" id="work">
-                <p>Here will lie all my works, im currently porting everything from by old website.</p>
-            </div>
-            <div class="tab-content hidden" id="about">
-                <p>Here you will get to know about me</p>
+        </div>
+    </header>
+    <div class="tabs-content-container">
+        <div class=" tab-content" id="home">
+            <div class="home-grid">
+                <div class="welcome">
+                    <div class="box">
+                        <p><b>welcome to my website!</b>
+                            <br><br>I'm in the middle of rebuilding everything, expect some drastic changes in the
+                            upcomming days/weeks :D
+                        </p>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="box">Status</div>
+                </div>
+                <div class="div6">
+                    <div class="box">extra</div>
+                </div>
+                <div class="div7">
+                    <div class="box">extra</div>
+                </div>
+                <div class="div9">
+                    <div class="box">Art</div>
+                </div>
+                <div class="lastPlayed">
+                    <div class="box">
+                        <div id="listeningStatus"></div>
+                        <div id="listening"></div>
+                    </div>
+                </div>
+                <div class="neighbors">
+                    <div class="box"><b>NEIGHBORS</b></div>
+                </div>
+                <div class="logs">
+                    <div class="box">
+
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab-link" data-tab="updates">updates</button>
+                                <button class="tab-link" data-tab="todos">to-do's</button>
+                            </div>
+                        </div>
+                        <div class="tabs-content-container" style="height: 200px;">
+                            <div class="tab-content" id="updates">
+                                Updates
+                            </div>
+                            <div class="tab-content hidden" id="todos">
+                                Todos
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </body>
+        <div class="tab-content hidden" id="work">
+            <p>Here will lie all my works, im currently porting everything from by old website.</p>
+        </div>
+        <div class="tab-content hidden" id="about">
+            <p>Here you will get to know about me</p>
+        </div>
+    </div>
+    <footer>
+        vicleblond.com @ 2025
+    </footer>
+</body>
+
 </html>

@@ -1,11 +1,16 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const tabs = document.querySelectorAll('.tab-link');
-    const tabsContent = document.querySelectorAll('.tab-content');
+document.addEventListener("DOMContentLoaded", function () {
 
-    tabs.forEach(tab =>{
-        tab.addEventListener('click', function (){
+    addTab('.tab-link','.tab-content');
+}); 
+function addTab(tabsT, tabsContentT) {
+    const tabs = document.querySelectorAll(tabsT);
+    const tabsContent = document.querySelectorAll(tabsContentT);
+
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
             tabs.forEach(t => t.classList.remove('active'));
-            tabsContent.forEach(content=>{
+            tabsContent.forEach(content => {
                 content.classList.add('hidden');
                 content.style.display = 'none';
             })
@@ -17,4 +22,4 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     tabs[0].classList.add('active');
     tabContents[0].style.display = 'block';
-});
+}
