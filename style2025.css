@@ -184,6 +184,9 @@ footer {
     grid-template-rows: auto;
     gap: 5px;
 }
+.grid-explobot img{
+    width: 100%;
+}
 
 .active,
 .collapsible:after {
