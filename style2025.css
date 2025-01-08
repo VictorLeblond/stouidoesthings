@@ -17,7 +17,7 @@ h1 {
 }
 
 body {
-    padding-top: 300px;
+    padding-top: 100px;
     width: 900px;
     margin: auto;
     font-family: 'PixelOperator', sans-serif;
@@ -34,6 +34,33 @@ footer {
     margin: auto;
     display: flex;
     justify-content: center;
+}
+#aboutMeSection{
+    margin-top:5px;
+    overflow-y: scroll;
+}
+#aboutMeSection::-webkit-scrollbar{
+    display: none;
+}
+
+#aboutme{
+    display: flex;
+    align-items: felx-end;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+#portait{
+    width: 35%;
+    padding:5px
+}
+
+#desc{
+    width: auto;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #listening {
@@ -171,11 +198,13 @@ footer {
 
 .collapsible {
     background-color: transparent;
+    font-family: "PixelOperator";
     cursor: pointer;
+    font-weight: bold;
     width: 100%;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 24px;
 }
 
 .grid-explobot{
@@ -226,6 +255,13 @@ footer {
     grid-template-rows: auto;gap: 5px;
 }
 
+.about-grid{
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
 .work-grid {
     display: grid;
     grid-template-columns: auto 250px;
@@ -247,7 +283,7 @@ footer {
 .welcome {
     grid-column: span 4 / span 4;
     grid-row: span 4 / span 4;
-    height: 500px;
+    height: 300px;
 }
 
 .status {
