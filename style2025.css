@@ -1,5 +1,8 @@
-:root{
+:root {
     --backgroundSize: 48px;
+    --buttonColor: rgb(224, 218, 249);
+    --pageColor: aliceblue;
+
 }
 
 .hidden {
@@ -21,10 +24,30 @@ body {
     width: 900px;
     margin: auto;
     font-family: 'PixelOperator', sans-serif;
-    font-size: larger;
-    background-image: url('./sprites/bg1.png');
+    font-size: larger; 
+    background-image: url('./sprites/sandandslash/SandAndSlashBackground.png');
+    background-color:#c18446;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    /*
+    standard
+     background-image: url('./sprites/bg1.png');
     background-size: var(--backgroundSize);
     animation: movingBackground 5s linear infinite;
+    
+
+    sandandslash 
+    background-image: url('./sprites/sandandslash/SandAndSlashBackground.png');
+    background-color:#c18446;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+
+    dreamcatchers
+    background-image: url('./sprites/dreamcatchers/ss1.png');
+    background-position: top right;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    */
 }
 
 footer {
@@ -35,27 +58,30 @@ footer {
     display: flex;
     justify-content: center;
 }
-#aboutMeSection{
-    margin-top:5px;
+
+#aboutMeSection {
+    margin-top: 5px;
     overflow-y: scroll;
 }
-#aboutMeSection::-webkit-scrollbar{
+
+#aboutMeSection::-webkit-scrollbar {
     display: none;
 }
 
-#aboutme{
+#aboutme {
     display: flex;
     align-items: felx-end;
     padding: 0;
     margin: 0;
     justify-content: space-between;
 }
-#portait{
+
+#portait {
     width: 35%;
-    padding:5px
+    padding: 5px
 }
 
-#desc{
+#desc {
     width: auto;
     text-align: right;
     padding-right: 5px;
@@ -99,6 +125,16 @@ footer {
     border-bottom: 1px dotted black;
 }
 
+#app {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.rightSided{
+    text-align: right;
+}
+
 .title {
     font-weight: bold;
     border-bottom: 1px dotted black;
@@ -119,7 +155,7 @@ footer {
     font-size: large;
     flex: 1;
     text-align: center;
-    background-color: rgb(224, 218, 249);
+    background-color: var(--buttonColor);
     margin-bottom: 5px;
 }
 
@@ -144,12 +180,12 @@ footer {
 .tabs-content-container {
     width: 100%;
     height: auto;
-    background-color: aliceblue;
+    background-color: var(--pageColor);
 }
 
 .tabs-content-container-logs {
     width: 100%;
-    background-color: aliceblue;
+    background-color: var(--pageColor);
     overflow-y: scroll;
 }
 
@@ -162,7 +198,7 @@ footer {
     font-size: large;
     flex: 1;
     text-align: center;
-    background-color: rgb(224, 218, 249);
+    background-color: var(--buttonColor);
 }
 
 .tab-link-logs {
@@ -170,7 +206,7 @@ footer {
     font-size: large;
     flex: 1;
     text-align: center;
-    background-color: rgb(224, 218, 249);
+    background-color: var(--buttonColor);
 }
 
 .tabs {
@@ -192,6 +228,7 @@ footer {
 .tab-link-logs:hover {
     background-color: rgb(179, 171, 213);
 }
+
 .tab-link-nav:hover {
     background-color: rgb(179, 171, 213);
 }
@@ -207,13 +244,14 @@ footer {
     font-size: 24px;
 }
 
-.grid-explobot{
+.grid-explobot {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     gap: 5px;
 }
-.grid-explobot img{
+
+.grid-explobot img {
     width: 100%;
 }
 
@@ -244,18 +282,19 @@ footer {
     padding: 5px;
 }
 
-.display{
+.display {
     width: 100%;
     height: auto;
 }
 
-.displayer{
+.displayer {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto;gap: 5px;
+    grid-template-rows: auto;
+    gap: 5px;
 }
 
-.about-grid{
+.about-grid {
     display: grid;
     grid-template-columns: auto 250px;
     grid-template-rows: auto;
@@ -330,9 +369,14 @@ footer {
     width: 315px;
 }
 
-@keyframes movingBackground{
-    from{ background-position: 0 0;}
-    to{ background-position: var(--backgroundSize) var(--backgroundSize);}
+@keyframes movingBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: var(--backgroundSize) var(--backgroundSize);
+    }
 }
 
 @font-face {
