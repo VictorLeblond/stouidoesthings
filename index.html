@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style2025.css">
     <script src="./js/script.js"></script>
     <script src="./js/lastfm.js"></script>
+
 </head>
 
 <body>
@@ -31,10 +32,10 @@
                     <div class="box">
                         <div class="title"> welcome to my website!</div><br>
                         I'm happy to have you here, I'm vic, also known as Stoui online, I'm a computer science student
-                        passionated about art and video games<br><br>
+                        who loves art and video games<br><br>
                         this place is where you can find all of my creative projects and get to get to know me <br><br>
                         <br>
-                        bellow you will find a snippet of what awaits you in the work section of this site<br><br>
+                        below you will find a snippet of what awaits you in the work section of this site<br><br>
                         have fun!
                     </div>
                 </div>
@@ -75,6 +76,9 @@
                                 src="https://webfish.neocities.org/new/webfish.png"></a>
                         <a href="https://cyberdemon.nekoweb.org/"><img src="https://cyberdemon.nekoweb.org/button.png">
                         </a>
+                        <a href="https://petrapixel.neocities.org/" target="_blank"><img
+                                src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif"
+                                alt="petrapixel"></a>
                         <a href="https://joo.sh/" target="_blank"><img
                                 src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
                         <div class="linkme">link me : WIP sorry :|</div>
@@ -91,16 +95,13 @@
                         </div>
                         <div class="tabs-content-container-logs" style="height: 200px;">
                             <div class="tab-content-logs" id="updates">
-                                <button class="collapsible">v1.1.8.1</button>
-                                <div class="collapsible-content">
-                                    hello internet!<br>
-                                    - added home, work and about page
-                                </div>
                             </div>
                             <div class="tab-content-logs hidden" id="todos">
-                                <dl>
-                                    - more of everythings; sprites, overlays, buttons, etc...
-                                </dl>
+                                - more everything
+                                - widgets, more infos on about
+                                - a button for link
+                                - skins
+                                </menu>
                             </div>
                         </div>
                     </div>
@@ -127,7 +128,7 @@
                                 <img src="./3dassets/WhiteDude5.gif" class="box">
                                 <img src="./3dassets/Cocktail.gif" class="box">
                             </div>
-                            <div style="text-align: right;">blah blah</div>
+                            <div class="rightSided">blah blah</div>
                             <br>
                             <div class="title">Atmospheric rendering</div><br>
                             scene made from blender imported into unity, added particle system such as the fog or the
@@ -462,6 +463,16 @@
             </div>
         </div>
     </div>
+    <div id="app"></div>
+    <script>
+        
+    </script>
+    <script src="https://unpkg.com/webamp"></script>
+    <script>
+        const app = document.getElementById("app")
+        const webamp = new Webamp();
+        webamp.renderWhenReady(app);
+    </script>
     <footer>
         vicleblond.com @ 2025
     </footer>
