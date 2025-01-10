@@ -24,11 +24,9 @@ body {
     width: 900px;
     margin: auto;
     font-family: 'PixelOperator', sans-serif;
-    font-size: larger; 
-    background-image: url('./sprites/sandandslash/SandAndSlashBackground.png');
-    background-color:#c18446;
-    background-attachment: scroll;
-    background-repeat: repeat-x;
+    font-size: larger; background-image: url('./sprites/bg1.png');
+    background-size: var(--backgroundSize);
+    animation: movingBackground 5s linear infinite;
     /*
     standard
      background-image: url('./sprites/bg1.png');
