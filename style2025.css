@@ -1,9 +1,3 @@
-:root {
-    --backgroundSize: 48px;
-    --buttonColor: rgb(224, 218, 249);
-    --pageColor: aliceblue;
-
-}
 
 .hidden {
     display: none;
@@ -24,29 +18,109 @@ body {
     width: 900px;
     margin: auto;
     font-family: 'PixelOperator', sans-serif;
-    font-size: larger; background-image: url('./sprites/bg1.png');
-    background-size: var(--backgroundSize);
-    animation: movingBackground 5s linear infinite;
-    /*
-    standard
-     background-image: url('./sprites/bg1.png');
-    background-size: var(--backgroundSize);
-    animation: movingBackground 5s linear infinite;
-    
+    font-size: larger;
+}
 
-    sandandslash 
+/* ---------  THEMES --------- */
+.standard {
+    --backgroundSize: 48px;
+    --buttonColor: rgb(224, 218, 249);
+    --buttonHoverColor:  rgb(147, 132, 214);
+    --pageColor: aliceblue;
+    background-image: url('./sprites/bg1.png');
+    background-size: var(--backgroundSize);
+    animation: movingBackground 5s linear infinite;
+}
+
+.sandandslash {
+    --buttonColor: rgb(251, 156, 133);
+    --buttonHoverColor: rgb(231, 85, 85);
+    --pageColor: rgb(255, 244, 233);
     background-image: url('./sprites/sandandslash/SandAndSlashBackground.png');
-    background-color:#c18446;
+    background-color: #c18446;
+    background-position: top center;
     background-attachment: scroll;
     background-repeat: repeat-x;
+}
+.explobot{
+    --buttonColor: rgb(221, 249, 218);
+    --buttonHoverColor:  rgb(135, 224, 115);
+    --pageColor: rgb(240, 255, 243);
+    background-image: url('./sprites/explobotBackground.png');
+    background-color: #eec39a;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+}
 
-    dreamcatchers
+.chillgang {
+    --buttonColor: rgb(224, 218, 249);
+    --buttonHoverColor:  rgb(179, 171, 213);
+    --pageColor: aliceblue;
+    background-image: url('./sprites/gangchill-export.png');
+    background-color: #0f0b0e;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+}
+
+.dreamcatchers-dark {
+    --buttonColor: rgb(245, 218, 249);
+    --buttonHoverColor:  rgb(205, 171, 213);
+    --pageColor: rgb(255, 240, 255);
+    background-image: url('./sprites/dreamcatchers/ss2.png');
+    background-position: top right;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+.dreamcatchers-light {
+    --buttonColor: rgb(224, 218, 249);
+    --buttonHoverColor:  rgb(179, 171, 213);
+    --pageColor: aliceblue;
     background-image: url('./sprites/dreamcatchers/ss1.png');
     background-position: top right;
     background-repeat: repeat-x;
     background-attachment: fixed;
-    */
 }
+
+/* ---------  /THEMES --------- */
+
+/* --------- CALENDAR --------- */
+
+.calendar-container{
+    background-color: var(--buttonColor);
+}
+
+.calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap:2px;
+    text-align: center;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.calendar-nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: var(--pageColor);
+}
+.calendar-nav button{
+    background-color: var(--buttonColor);
+}
+
+.calendar-day{
+    background-color: var(--pageColor);
+}
+.calendar-day.today{
+    background-color: var(--buttonHoverColor);
+    color: white;
+}
+
+
+
+/* --------- /CALENDAR --------- */
 
 footer {
     font-family: 'PixelOperator', sans-serif;
@@ -55,6 +129,13 @@ footer {
     margin: auto;
     display: flex;
     justify-content: center;
+}
+textarea{
+    width: 100%;
+}
+
+#linkme{
+    margin-top: 10px;
 }
 
 #aboutMeSection {
@@ -125,17 +206,28 @@ footer {
 
 #app {
     position: fixed;
-    bottom: 0;
-    right: 0;
 }
 
-.rightSided{
+#clock{
+    text-align: center;
+}
+
+.rightSided {
     text-align: right;
 }
 
 .title {
     font-weight: bold;
     border-bottom: 1px dotted black;
+}
+
+.uiButton {
+    display: inline-flex;
+    border: 6px solid;
+    height: 100%;
+    border-image-source: url("./sprites/ui-export.png");
+    border-image-slice: 25 fill;
+    border-image-repeat: round;
 }
 
 .tab-content {
@@ -220,15 +312,15 @@ footer {
 }
 
 .tab-link:hover {
-    background-color: rgb(179, 171, 213);
+    background-color: var(--buttonHoverColor);
 }
 
 .tab-link-logs:hover {
-    background-color: rgb(179, 171, 213);
+    background-color:  var(--buttonHoverColor);
 }
 
 .tab-link-nav:hover {
-    background-color: rgb(179, 171, 213);
+    background-color:  var(--buttonHoverColor);
 }
 
 .collapsible {
@@ -276,7 +368,7 @@ footer {
 .box {
     border: 1px solid black;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 5px;
 }
 
@@ -326,6 +418,7 @@ footer {
 .status {
     grid-row: span 3 / span 3;
     grid-column-start: 5;
+    height: auto;
 }
 
 .div6 {
@@ -342,7 +435,7 @@ footer {
     grid-column: span 4 / span 4;
     grid-column-start: 1;
     grid-row-start: 5;
-    height: 100px;
+    height: auto;
 }
 
 .lastPlayed {

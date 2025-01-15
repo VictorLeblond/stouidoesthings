@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./style2025.css">
     <script src="./js/script.js"></script>
     <script src="./js/lastfm.js"></script>
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+
+    <script src="https://status.cafe/current-status.js?name=vicleblond" defer></script>
 
 </head>
 
-<body>
+<body class="">
     <header>
         <div class="tab-container">
             <h1>
@@ -40,20 +43,64 @@
                     </div>
                 </div>
                 <div class="status">
-                    <div class="box"></div>
+                    <div class="box">
+                        <div class="title">status</div>
+                        <div id="statuscafe">
+                            <div id="statuscafe-username"></div>
+                            <div id="statuscafe-content"></div>
+                        </div>
+                    </div>
+                    <div class="box" style="margin-top: 5px;">
+                        <div class="title" style="margin-bottom: 5px;">current time</div>
+                        <div id="clock"></div>
+                    </div>
+                    <div class="box" style="margin-top: 5px;">
+                        <div class="title">calendar</div><br>
+                        <div class="box calendar-container">
+                            <div >
+                                <div class="box calendar-nav"><button class="calendar-nav prev-month"> <</button>
+                                            <span class="calendar-current-month"></span>
+                                            <button class="calendar-nav next-month">></button>
+                                </div>
+                                <div class="calendar-grid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="div6">
-                    <div class="box"></div>
+                    <div class="box">
+                        <div class="title">my button</div>
+                        <div id="linkme"><img src="./sprites/vicleblondbutton.png"></div>
+                        copy this and put it on your website :
+                        <textarea>
+                            "<a href="https://vicleblond.com"><img
+                                    src="https://vicleblond.com/sprites/vicleblondbutton.png"></a>"
+                            </textarea>
+                    </div>
                 </div>
                 <div class="div7">
                     <div class="box"></div>
                 </div>
                 <div class="div9">
                     <div class="box">
-                        <a href="vicleblond.com/sandandslash"><img src="./sprites/snsbutton.png"
-                                style="border: 1px solid black; "></a>
-                        <img src="./sprites/explobot.png" style="border: 1px solid black; ">
-                        <img src="./sprites/dreamcatchers/dreamcatchersbutton.png" style="border: 1px solid black; ">
+                        <div class="title">themes</div><br>
+                        <div style="text-align: center; padding-top: 5px; padding-bottom: 5px;">you can customize this
+                            site's appearance with these different themes</div><br>
+                        <a class="uiButton" href="#" onclick="switchTheme('sandandslash')" id=""><img
+                                src="./sprites/snsbutton.png"></a>
+                        <a class="uiButton" href="#" onclick="switchTheme('explobot')" id=""><img
+                                src="./sprites/explobot.png"></a>
+                        <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-dark')" id=""><img
+                                src="./sprites/dreamcatchers/dreamcatchersbutton.png"></a><br><br>
+                        <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-light')" id=""><img
+                                src="./sprites/dreamcatchers/dreamcatchersbutton-2.png"></a>
+                        <a class="uiButton" href="#" onclick="switchTheme('standard')" id=""><img
+                                src="./sprites/alphabutton.png"></a>
+                        <a class="uiButton" href="#" onclick="switchTheme('chillgang')" id=""><img
+                                src="./sprites/chillgangbutton.png"></a>
+                        <a class="uiButton" id=""><img src="./sprites/wipbutton.png"></a>
+
                     </div>
                 </div>
                 <div class="lastPlayed">
@@ -81,7 +128,9 @@
                                 alt="petrapixel"></a>
                         <a href="https://joo.sh/" target="_blank"><img
                                 src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
-                        <div class="linkme">link me : WIP sorry :|</div>
+                        <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png"
+                                alt="Status Cafe" /></a>
+
                     </div>
                 </div>
                 <div class="logs">
@@ -97,10 +146,10 @@
                             <div class="tab-content-logs" id="updates">
                             </div>
                             <div class="tab-content-logs hidden" id="todos">
-                                - more everything
-                                - widgets, more infos on about
-                                - a button for link
-                                - skins
+                                - animated background<br>
+                                - sfx<br>
+                                - game's specific pages<br>
+                                - ressource/media
                                 </menu>
                             </div>
                         </div>
@@ -463,15 +512,9 @@
             </div>
         </div>
     </div>
-    <div id="app"></div>
+    <div id="winamp-container"></div>
     <script>
-        
-    </script>
-    <script src="https://unpkg.com/webamp"></script>
-    <script>
-        const app = document.getElementById("app")
-        const webamp = new Webamp();
-        webamp.renderWhenReady(app);
+
     </script>
     <footer>
         vicleblond.com @ 2025

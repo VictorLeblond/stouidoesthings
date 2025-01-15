@@ -143,7 +143,6 @@ function init() {
     //Add Elements
     group.add(camera)
 
-    scene.add(speh);
     scene.add(group)
     scene.add(light, new THREE.AmbientLight(0xffffff, .1));
     scene.add(light)
