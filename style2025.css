@@ -1,4 +1,3 @@
-
 .hidden {
     display: none;
 }
@@ -25,7 +24,7 @@ body {
 .standard {
     --backgroundSize: 48px;
     --buttonColor: rgb(224, 218, 249);
-    --buttonHoverColor:  rgb(147, 132, 214);
+    --buttonHoverColor: rgb(147, 132, 214);
     --pageColor: aliceblue;
     background-image: url('./sprites/bg1.png');
     background-size: var(--backgroundSize);
@@ -42,9 +41,10 @@ body {
     background-attachment: scroll;
     background-repeat: repeat-x;
 }
-.explobot{
+
+.explobot {
     --buttonColor: rgb(221, 249, 218);
-    --buttonHoverColor:  rgb(135, 224, 115);
+    --buttonHoverColor: rgb(135, 224, 115);
     --pageColor: rgb(240, 255, 243);
     background-image: url('./sprites/explobotBackground.png');
     background-color: #eec39a;
@@ -55,7 +55,7 @@ body {
 
 .chillgang {
     --buttonColor: rgb(224, 218, 249);
-    --buttonHoverColor:  rgb(179, 171, 213);
+    --buttonHoverColor: rgb(179, 171, 213);
     --pageColor: aliceblue;
     background-image: url('./sprites/gangchill-export.png');
     background-color: #0f0b0e;
@@ -66,17 +66,20 @@ body {
 
 .dreamcatchers-dark {
     --buttonColor: rgb(245, 218, 249);
-    --buttonHoverColor:  rgb(205, 171, 213);
+    --buttonHoverColor: rgb(205, 171, 213);
     --pageColor: rgb(255, 240, 255);
+    background-color: #debef4;
     background-image: url('./sprites/dreamcatchers/ss2.png');
     background-position: top right;
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
+
 .dreamcatchers-light {
     --buttonColor: rgb(224, 218, 249);
-    --buttonHoverColor:  rgb(179, 171, 213);
+    --buttonHoverColor: rgb(179, 171, 213);
     --pageColor: aliceblue;
+    background-color: #a8ebec;
     background-image: url('./sprites/dreamcatchers/ss1.png');
     background-position: top right;
     background-repeat: repeat-x;
@@ -87,40 +90,56 @@ body {
 
 /* --------- CALENDAR --------- */
 
-.calendar-container{
+.calendar-container {
     background-color: var(--buttonColor);
 }
 
-.calendar-grid{
+.calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, auto);
-    gap:2px;
+    gap: 2px;
     text-align: center;
     margin: 5px;
     padding-top: 5px;
 }
 
-.calendar-nav{
+.calendar-nav {
     justify-content: space-between;
     align-items: center;
     display: flex;
     background-color: var(--pageColor);
 }
-.calendar-nav button{
+
+.calendar-nav button {
     background-color: var(--buttonColor);
 }
 
-.calendar-day{
+.calendar-day {
     background-color: var(--pageColor);
 }
-.calendar-day.today{
+
+.calendar-day.today {
     background-color: var(--buttonHoverColor);
     color: white;
 }
 
-
-
 /* --------- /CALENDAR --------- */
+
+/* --------- TITLE --------- */
+
+.title-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.title-container img {
+    height: 64px;
+}
+
+/* --------- /TITLE --------- */
 
 footer {
     font-family: 'PixelOperator', sans-serif;
@@ -130,17 +149,34 @@ footer {
     display: flex;
     justify-content: center;
 }
-textarea{
+
+textarea {
     width: 100%;
 }
 
-#linkme{
+
+#winamp-container {
+    position: fixed;
+    top: 10px;
+    /* Distance from the top */
+    right: 10px;
+    /* Distance from the right */
+    z-index: 1000;
+    /* Keeps it above other content */
+}
+
+#linkme {
     margin-top: 10px;
 }
 
 #aboutMeSection {
     margin-top: 5px;
     overflow-y: scroll;
+    
+}
+
+#aboutMeSection button{
+    font-size: 24px;
 }
 
 #aboutMeSection::-webkit-scrollbar {
@@ -208,8 +244,12 @@ textarea{
     position: fixed;
 }
 
-#clock{
+#clock {
     text-align: center;
+}
+
+.winamp-container {
+    position: fixed;
 }
 
 .rightSided {
@@ -316,22 +356,20 @@ textarea{
 }
 
 .tab-link-logs:hover {
-    background-color:  var(--buttonHoverColor);
+    background-color: var(--buttonHoverColor);
 }
 
 .tab-link-nav:hover {
-    background-color:  var(--buttonHoverColor);
+    background-color: var(--buttonHoverColor);
 }
 
 .collapsible {
     background-color: transparent;
     font-family: "PixelOperator";
     cursor: pointer;
-    font-weight: bold;
     width: 100%;
     border: none;
     outline: none;
-    font-size: 24px;
 }
 
 .grid-explobot {
@@ -345,16 +383,14 @@ textarea{
     width: 100%;
 }
 
-.active,
 .collapsible:after {
-    content: "\2212";
-}
-
-.collapsible:after {
-    content: '\002B';
     font-weight: bold;
     float: right;
     margin-left: 5px;
+}
+
+.collapsible:hover{
+    background-color: var(--buttonColor);
 }
 
 .collapsible-content {
@@ -436,6 +472,14 @@ textarea{
     grid-column-start: 1;
     grid-row-start: 5;
     height: auto;
+}
+
+.div9 a {
+    transition: filter 0.3s ease;
+}
+
+.div9 a:hover {
+    filter: brightness(70%);
 }
 
 .lastPlayed {

@@ -1,12 +1,23 @@
 
 <changelogs>
 <log>
-    <title>v1.1.15.2</title>
+<title>v1.1.17</title>
+    <description>ajusted welcome and about paragraphs, added graphics - polls, fixed a bunch of stuff, 
+    some stuff are broken, I'm currently fixing them</description>
+    <date>2025-01-17</date>
+</log>
+<log>
+    <title>v1.1.15</title>
+    <description>fixed backgrounds, ajusted welcome paragraph, added graphics</description>
+    <date>2025-01-15</date>
+</log>
+<log>
+    <title>v1.1.15</title>
     <description>added calendar, skins, time and status</description>
     <date>2025-01-15</date>
 </log>
 <log>
-    <title>v1.1.10.2</title>
+    <title>v1.1.10</title>
     <description>added change logs, 
     ajusted a lot of details and grammar mistakes (I will continue to make them, and correct them again),
     added skins (more will come),
@@ -15,7 +26,7 @@
     <date>2025-01-10</date>
 </log>
 <log>
-    <title>v1.1.8.1</title>
+    <title>v1.1.8</title>
     <description>added home page, work and about</description>
     <date>2025-01-8</date>
 </log>

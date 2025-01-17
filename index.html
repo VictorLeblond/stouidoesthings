@@ -16,11 +16,19 @@
 
 <body class="">
     <header>
+        <div class="title-container">
+            <span><img class="titleLetter" src="./sprites/letters/v.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/i.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/c.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/l.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/e.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/b.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/l.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/o.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/n.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/d.gif"></span>
+        </div>
         <div class="tab-container">
-            <h1>
-                <b>vicleblond.com</b>
-            </h1>
-
             <div class=tabs>
                 <button class="tab-link" data-tab="home">home</button>
                 <button class="tab-link" data-tab="work">work</button>
@@ -57,8 +65,9 @@
                     <div class="box" style="margin-top: 5px;">
                         <div class="title">calendar</div><br>
                         <div class="box calendar-container">
-                            <div >
-                                <div class="box calendar-nav"><button class="calendar-nav prev-month"> <</button>
+                            <div>
+                                <div class="box calendar-nav"><button class="calendar-nav prev-month">
+                                        < </button>
                                             <span class="calendar-current-month"></span>
                                             <button class="calendar-nav next-month">></button>
                                 </div>
@@ -70,11 +79,13 @@
                 </div>
                 <div class="div6">
                     <div class="box">
-                        
+
                     </div>
                 </div>
                 <div class="div7">
-                    <div class="box"></div>
+                    <div class="box">
+                        
+                    </div>
                 </div>
                 <div class="div9">
                     <div class="box">
@@ -93,7 +104,6 @@
                                 src="./sprites/alphabutton.png"></a>
                         <a class="uiButton" href="#" onclick="switchTheme('chillgang')" id=""><img
                                 src="./sprites/chillgangbutton.png"></a>
-                        <a class="uiButton" id=""><img src="./sprites/wipbutton.png"></a>
 
                     </div>
                 </div>
@@ -101,16 +111,35 @@
                     <div class="box">
                         <div id="listeningStatus"></div>
                         <div id="listening"></div>
-                    </div><div class="box" style="margin-top: 5px;">
-                        <div class="title" >my button</div>
-                        <div id="linkme"><img src="./sprites/vicleblondbutton.png"></div>
-                        copy this and put it on your website :
-                        <textarea>
-                            "<a href="https://vicleblond.com"><img
-                                    src="https://vicleblond.com/sprites/vicleblondbutton.png"></a>"
-                            </textarea>
                     </div>
-                    
+                    <div class="box" style="margin-top: 5px;">
+                        <form method="post" action="https://poll.pollcode.com/74733635">
+                            <div 
+                                style="padding:2px;width:100%;">
+                                <div class="title" style="margin-bottom: 5px;"><strong>keep one, ban the rest</strong></div>
+                                <input type="radio" name="answer" value="1" id="answer747336351"
+                                    style="float:left;" /><label for="answer747336351"
+                                    style="float:left;">undertale</label>
+                                <div style="clear:both;"></div><input type="radio" name="answer" value="2"
+                                    id="answer747336352" style="float:left;" /><label for="answer747336352"
+                                    style="float:left;">hollow knight</label>
+                                <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3"
+                                    id="answer747336353" style="float:left;" /><label for="answer747336353"
+                                    style="float:left;">animal well</label>
+                                <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4"
+                                    id="answer747336354" style="float:left;" /><label for="answer747336354"
+                                    style="float:left;">stardew valley</label>
+                                <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5"
+                                    id="answer747336355" style="float:left;" /><label for="answer747336355"
+                                    style="float:left;">disco elysium</label>
+                                <div style="clear:both;height:2px;"></div>
+                                <div align="center" style="padding:3px;"><input type="submit"
+                                        value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div>
+                                <div align="right" style="font-size:10px">pollcode.com <a
+                                        href="https://pollcode.com/">free polls</a></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="neighbors">
                     <div class="box">
@@ -133,7 +162,17 @@
                                 src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
                         <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png"
                                 alt="Status Cafe" /></a>
-
+                                <div class="title">my button</div>
+                                <div id="linkme"><a href="https://vicleblond.com"><img src="./sprites/vicleblondbutton.png"></a>
+                                </div>
+                                <button class="collapsible">
+                                    <div class="rightSided">code</div>
+                                </button>
+                                <div class="collapsible-content">
+                                    <div class="box"><textarea
+                                            id="single-line-code"><a href="https://vicleblond.com"><img src="https://vicleblond.com/sprites/vicleblondbutton.png"></a></textarea>
+                                    </div>
+                                </div>
                     </div>
                 </div>
                 <div class="logs">
@@ -152,7 +191,9 @@
                                 - animated background<br>
                                 - sfx<br>
                                 - game's specific pages<br>
-                                - ressource/media
+                                - ressource/media<br>
+                                - better logo<br>
+                                - more everything
                                 </menu>
                             </div>
                         </div>
@@ -429,7 +470,7 @@
         </div>
         <div class="tab-content hidden" id="about">
             <div class="about-grid">
-                <div>
+                <div class=".">
                     <div class="box">
                         <div id="aboutMeSection">
                             <div class="title">who am I?</div><br>
@@ -440,7 +481,6 @@
                                     21 <br>M<br>
                                 </div>
                             </div>
-
 
                             <div class="box" id="aboutMeSection">
                                 <button class="collapsible">
@@ -468,12 +508,6 @@
                                     wouldn't be in Montreal without them, all of the indie games that were able to go
                                     against
                                     their time and change the way we perceived games at their time
-                                </div><br>
-                                <button class="collapsible">
-                                    <div class="title">favorites</div>
-                                </button>
-                                <div class="collapsible-content">
-                                    WIP
                                 </div><br>
                                 <button class="collapsible">
                                     <div class="title">why this website?</div>
@@ -511,17 +545,17 @@
                             <li><a href="./cv.pdf">resume</a></li>
                         </ul>
                     </div>
+                    <div class="box" style="margin-top: 5px;">
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="winamp-container"></div>
-    <script>
-
-    </script>
     <footer>
         vicleblond.com @ 2025
     </footer>
+    <div id="winamp-container"></div>
 </body>
 
 </html>
