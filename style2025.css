@@ -18,7 +18,7 @@ body {
     margin: auto;
     margin-top: 10px;
     font-family: 'PixelOperator', sans-serif;
-    font-size: larger;
+    font-size: 17px;
 }
 
 /* ---------  THEMES --------- */
@@ -136,10 +136,6 @@ body {
     width: 100%;
     margin-bottom: 20px;
     justify-content: space-around;
-    background-color: rgb(80, 51, 120);
-    border: 6px solid;
-    border-image-slice: 25 repeat;
-    border-image-repeat: round;
 }
 
 .title-container img {
@@ -161,31 +157,40 @@ textarea {
     width: 100%;
 }
 
+#mePic{
+    height: 300px; 
+    width: auto;
+    overflow:hidden;
+}
+
+#mePic::-webkit-scrollbar{
+    display: none;
+}
 #platBg{
     position: absolute;
-    right:12%;
-    top:5%;
+    right:12vw;
+    top:2vh;
     height: 350px;
     z-index: -1;
 }
 #explobotBg{
     position: absolute;
-    left:13%;
-    top:15%;
+    left:13vw;
+    top:5vh;
     height: 175px;
     z-index: -2;
 }
 #bassBg{
     position: absolute;
-    left:13%;
-    bottom: 5%;
+    left:13vw;
+    bottom: 5vh;
     height: 350px;
     z-index: -1;
 }
 #teacupsBg{
     position: absolute;
-    right:6%;
-    bottom: 0%;
+    right:6vw;
+    bottom: 0vh;
     height: 200px;
     z-index: -1;
 }
@@ -241,6 +246,7 @@ textarea {
 }
 
 #desc {
+    display: flex;
     width: auto;
     text-align: right;
     padding-right: 5px;
@@ -310,6 +316,7 @@ textarea {
 
 .title {
     font-weight: bold;
+    font-size: 20px;
     border-bottom: 1px dotted black;
 }
 
