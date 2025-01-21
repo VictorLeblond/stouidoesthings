@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="./style2025.css">
     <script src="./js/script.js"></script>
     <script src="./js/lastfm.js"></script>
+    <script src="./js/wobble.js"></script>
     <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
-
     <script src="https://status.cafe/current-status.js?name=vicleblond" defer></script>
-
 </head>
 
 <body class="">
     <header>
         <div class="title-container">
-            <span><img class="titleLetter" src="./sprites/letters/v.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/i.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/c.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/l.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/e.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/b.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/l.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/o.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/n.gif"></span>
-            <span><img class="titleLetter" src="./sprites/letters/d.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/v.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/i.gif"></span>
+            <span><img class="titleLetter dropShadow " src="./sprites/letters/c.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/l.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/e.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/b.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/l.gif"></span>
+            <span><img class="titleLetter dropShadow " src="./sprites/letters/o.gif"></span>
+            <span><img class="titleLetter dropShadow " src="./sprites/letters/n.gif"></span>
+            <span><img class="titleLetter dropShadow" src="./sprites/letters/d.gif"></span>
         </div>
+        <img class="dropShadow" id="platBg" src="./sprites/renders/render-plat.png" style="transform: rotate(15deg);">
+        <img class="dropShadow" id="explobotBg" src="./sprites/renders/render-explobot.png">
+        <img class="dropShadow" id="bassBg" src="./sprites/renders/render-bass.png">
+        <img class="dropShadow" id="teacupsBg" src="./sprites/renders/render-teacups.gif">
         <div class="tab-container">
             <div class=tabs>
                 <button class="tab-link" data-tab="home">home</button>
@@ -41,13 +44,26 @@
             <div class="home-grid">
                 <div class="welcome">
                     <div class="box">
-                        <div class="title"> welcome to my website!</div><br>
-                        I'm happy to have you here, I'm vic, also known as Stoui online, I'm a computer science student
-                        who loves art and video games<br><br>
-                        this place is where you can find all of my creative projects and get to get to know me <br><br>
-                        <br>
-                        below you will find a snippet of what awaits you in the work section of this site<br><br>
-                        have fun!
+                        <div class="grid-explobot">
+                            <div class="snippet-gallery">
+                                <img src="./sprites/me/me.png" alt="">
+                            </div>
+                            <div>
+                                <div class="title"> welcome all!</div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="margin-top: 16px;">
+                        <div class="title">snippet of what I do</div><br>
+                        <div class="snippet-gallery">
+                            <img src="./sprites/gallery/Doodle1.png">
+                            <img src="./sprites/gallery/pictures/2.jpg">
+                            <img src="./sprites/gallery/Goblin.png">
+                            <img src="./sprites/gallery/pictures/5.jpg">
+                            <img src="./arpgprototype/Pathfinding.gif">
+                            <img src="./2dassets/Guns.png">
+                            <img src="./3dassets/frogman.gif">
+                        </div>
                     </div>
                 </div>
                 <div class="status">
@@ -58,11 +74,11 @@
                             <div id="statuscafe-content"></div>
                         </div>
                     </div>
-                    <div class="box" style="margin-top: 5px;">
+                    <div class="box" style="margin-top: 16px;">
                         <div class="title" style="margin-bottom: 5px;">current time</div>
                         <div id="clock"></div>
                     </div>
-                    <div class="box" style="margin-top: 5px;">
+                    <div class="box" style="margin-top: 16px;">
                         <div class="title">calendar</div><br>
                         <div class="box calendar-container">
                             <div>
@@ -78,33 +94,33 @@
                     </div>
                 </div>
                 <div class="div6">
-                    <div class="box">
-
+                    <div class="box" style="padding: 0;">
+                        <div id="guestbookContainer">
+                            <img id="guestbookPlat" src="./sprites/plattalking.png" style="width: 100%;">
+                            <div id="guestbookText">please leave a comment on my <a
+                                    href="https://vicleblond.atabook.org/">guestbook</a>!
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="div7">
                     <div class="box">
-                        
+                        <img src="./sprites/plat.gif" width="100%" style="background-color: black;">
                     </div>
                 </div>
                 <div class="div9">
                     <div class="box">
                         <div class="title">themes</div><br>
-                        <div style="text-align: center; padding-top: 5px; padding-bottom: 5px;">you can customize this
+                        <div style="text-align: center; margin-top: 3px; margin-bottom: 3px;">you can customize this
                             site's appearance with these different themes</div><br>
-                        <a class="uiButton" href="#" onclick="switchTheme('sandandslash')" id=""><img
-                                src="./sprites/snsbutton.png"></a>
                         <a class="uiButton" href="#" onclick="switchTheme('explobot')" id=""><img
-                                src="./sprites/explobot.png"></a>
+                                src="./sprites/citybutton.png"></a>
                         <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-dark')" id=""><img
-                                src="./sprites/dreamcatchers/dreamcatchersbutton.png"></a><br><br>
-                        <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-light')" id=""><img
-                                src="./sprites/dreamcatchers/dreamcatchersbutton-2.png"></a>
-                        <a class="uiButton" href="#" onclick="switchTheme('standard')" id=""><img
-                                src="./sprites/alphabutton.png"></a>
-                        <a class="uiButton" href="#" onclick="switchTheme('chillgang')" id=""><img
-                                src="./sprites/chillgangbutton.png"></a>
-
+                                src="./sprites/dreamcatchers/dreamcatchersbutton.png"></a>
+                            <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-light')" id=""><img
+                                    src="./sprites/dreamcatchers/dreamcatchersbutton-2.png"></a>
+                            <a class="uiButton" href="#" onclick="switchTheme('standard')" id=""><img
+                                    src="./sprites/hylicsbutton.png"></a>
                     </div>
                 </div>
                 <div class="lastPlayed">
@@ -114,9 +130,9 @@
                     </div>
                     <div class="box" style="margin-top: 5px;">
                         <form method="post" action="https://poll.pollcode.com/74733635">
-                            <div 
-                                style="padding:2px;width:100%;">
-                                <div class="title" style="margin-bottom: 5px;"><strong>keep one, ban the rest</strong></div>
+                            <div style="padding:2px;width:100%;">
+                                <div class="title" style="margin-bottom: 5px;"><strong>keep one, ban the rest</strong>
+                                </div>
                                 <input type="radio" name="answer" value="1" id="answer747336351"
                                     style="float:left;" /><label for="answer747336351"
                                     style="float:left;">undertale</label>
@@ -162,17 +178,17 @@
                                 src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
                         <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png"
                                 alt="Status Cafe" /></a>
-                                <div class="title">my button</div>
-                                <div id="linkme"><a href="https://vicleblond.com"><img src="./sprites/vicleblondbutton.png"></a>
-                                </div>
-                                <button class="collapsible">
-                                    <div class="rightSided">code</div>
-                                </button>
-                                <div class="collapsible-content">
-                                    <div class="box"><textarea
-                                            id="single-line-code"><a href="https://vicleblond.com"><img src="https://vicleblond.com/sprites/vicleblondbutton.png"></a></textarea>
-                                    </div>
-                                </div>
+                        <div class="title">my button</div>
+                        <div id="linkme"><a href="https://vicleblond.com"><img src="./sprites/vicleblondbutton.png"></a>
+                        </div>
+                        <button class="collapsible">
+                            <div class="rightSided">code</div>
+                        </button>
+                        <div class="collapsible-content">
+                            <div class="box"><textarea
+                                    id="single-line-code"><a href="https://vicleblond.com"><img src="https://vicleblond.com/sprites/vicleblondbutton.png"></a></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="logs">
@@ -185,16 +201,15 @@
                             </div>
                         </div>
                         <div class="tabs-content-container-logs" style="height: 200px;">
-                            <div class="tab-content-logs" id="updates">
-                            </div>
+                            <div class="tab-content-logs" id="updates"></div>
                             <div class="tab-content-logs hidden" id="todos">
                                 - animated background<br>
                                 - sfx<br>
                                 - game's specific pages<br>
                                 - ressource/media<br>
                                 - better logo<br>
+                                - smth under navigation in work<br>
                                 - more everything
-                                </menu>
                             </div>
                         </div>
                     </div>
@@ -221,12 +236,12 @@
                                 <img src="./3dassets/WhiteDude5.gif" class="box">
                                 <img src="./3dassets/Cocktail.gif" class="box">
                             </div>
-                            <div class="rightSided">blah blah</div>
+                            <div class="rightSided"></div>
                             <br>
                             <div class="title">Atmospheric rendering</div><br>
                             scene made from blender imported into unity, added particle system such as the fog or the
-                            fireflies, added volumetric and pixelated rendering<br>
-                            <div class="vid"><video width="600" height="auto" controls loop autoplay>
+                            fireflies, added volumetric and pixelated rendering<br><br>
+                            <div class="vid"><video width="80%" height="auto" controls loop autoplay>
                                     <source src="./3dassets/SwampMp4.mp4" type="video/mp4">
                                 </video></div>
 
@@ -452,6 +467,20 @@
                                 <source src="./audio/Pick Ur Poison.011.wav" type="audio/wav">
                             </audio>
                         </div>
+                        <div class="tab-content-nav hidden" id="photography">
+                            <div class="title">photography</div>
+                            i love my city, montreal, here are some pictures I took around the city while walking around
+                            <div class="photography-grid">
+                                <img class="picture" src="./sprites/gallery/pictures/2.jpg">
+                                <img class="picture" src="./sprites/gallery/pictures/3.jpg">
+                                <img class="picture" src="./sprites/gallery/pictures/5.jpg">
+                                <img class="picture" src="./sprites/gallery/pictures/7.jpg">
+                                <img class="picture" src="./sprites/gallery/pictures/6.jpg">
+                                <img class="picture" src="./sprites/gallery/pictures/1.jpg">
+                                <img class="picture" src="./sprites/gallery/pictures/4.jpg">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="navigation">
@@ -463,6 +492,7 @@
                             <button class="tab-link-nav" data-tab="sprites">sprites</button>
                             <button class="tab-link-nav" data-tab="games">games</button>
                             <button class="tab-link-nav" data-tab="music">music</button>
+                            <button class="tab-link-nav" data-tab="photography">photography</button>
                         </div>
                     </div>
                 </div>

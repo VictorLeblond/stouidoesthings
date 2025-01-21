@@ -1,6 +1,11 @@
 
 <changelogs>
 <log>
+<title>v1.1.20</title>
+    <description>huge revamp, loads of sprites everywhere, added a bunch in about</description>
+    <date>2025-01-20</date>
+</log>
+<log>
 <title>v1.1.17</title>
     <description>ajusted welcome and about paragraphs, added graphics - polls, fixed a bunch of stuff, 
     some stuff are broken, I'm currently fixing them</description>
