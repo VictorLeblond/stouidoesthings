@@ -27,9 +27,27 @@ body {
     --buttonHoverColor: rgb(147, 132, 214);
     --pageColor: aliceblue;
     background-image: url("./sprites/bg3.png");
-    background-color: #faeccc;background-position: top center;
+    background-color: #faeccc;
+    background-position: top center;
     background-attachment: scroll;
-    background-repeat: repeat-x;
+    background-repeat: repeat-x, repeat;
+}
+
+.standard .background{
+    position: fixed;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -10;
+    background-image:  linear-gradient(to bottom, #6bbbf900, #fbb7ad51),url('./sprites/backgroundwaves.gif');
+     background-size: 64px 64px;
+    background-repeat: repeat;
+    background-color: transparent;
+    background-blend-mode: overlay;
+    filter: blur(7px);
+    mask-image: linear-gradient(to bottom, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
 }
 
 .sandandslash {
@@ -88,7 +106,25 @@ body {
 }
 
 /* ---------  /THEMES --------- */
+/* --------- SELECTOR --------- */
 
+.selector{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.selector-arrow{
+    cursor: pointer;
+    background-color: var(--buttonColor);
+}
+.selector-arrow:hover{
+    background-color: var(--buttonHoverColor);
+}
+.selector-display{
+    width: 100px;
+    height: 100px;
+}
+/* --------- /SELECTOR --------- */
 /* --------- CALENDAR --------- */
 
 .calendar-container {
@@ -140,9 +176,62 @@ body {
 
 .title-container img {
     height: 64px;
+    filter:hue-rotate(100deg);
 }
 
 /* --------- /TITLE --------- */
+
+/* ----- IMAGE PREVIEW ------ */
+
+#preview{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.168);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#previewImage{
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid white;
+    background-color: #22094a;
+}
+
+.preview .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ----- /IMAGE PREVIEW ------ */
+
+/* -----  GALLERY  ------ */
+
+.gallery img{
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor:pointer
+}
+
+.gallery img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* -----  /GALLERY  ------ */
+
 
 footer {
     font-family: 'PixelOperator', sans-serif;
@@ -315,6 +404,7 @@ textarea {
 }
 
 .title {
+    font-family: url("");
     font-weight: bold;
     font-size: 20px;
     border-bottom: 1px dotted black;
@@ -322,6 +412,7 @@ textarea {
 
 .uiButton {
     height: 100%;
+    width:min-content;
     display: inline-flex;
     border: 6px solid;
     border-image-source: url("./sprites/ui-export.png");
@@ -332,6 +423,8 @@ textarea {
 .tab-content {
     margin: auto;
     padding: 16px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .tab-content {
     --backgroundSize: 16px;
@@ -476,6 +569,13 @@ textarea {
     filter: drop-shadow(-1px 2px rgba(5, 2, 24, 0.309))
 }
 
+.box-outlineless {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+
 .display {
     width: 100%;
     height: auto;
@@ -514,10 +614,18 @@ textarea {
 }
 
 .welcome {
-    grid-column: span 4 / span 4;
+    grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
-    height: 100%;
-    width: 650px;
+    height: auto;
+    width: 315px;
+}
+
+.snippet{
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    height: auto;
+    width: 315px;
 }
 
 .snippet-gallery{
@@ -525,6 +633,19 @@ textarea {
     overflow-x: scroll;
     width: 100%;
     height: 150px;
+}
+
+.snippet-gallery::-webkit-scrollbar{
+   background-color: var(--buttonColor);
+   border: 1px solid black;
+}
+.snippet-gallery::-webkit-scrollbar-thumb{
+    background-color: var(--buttonHoverColor);
+    border: 1px solid black;
+ }
+
+.gallery img{
+
 }
 
 .welcome .box{
@@ -546,18 +667,34 @@ textarea {
     grid-row-start: 7;
 }
 
-.div9 {
-    grid-column: span 4 / span 4;
+.playExplobot{
+    grid-column-start:3;
+    grid-row-start: 2;
+    width: 315px;
+    height: 40px;
+}
+
+.inventory{
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    width: 315px;
+}
+
+.themes {
+    grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 5;
     height: auto;
+    width: 315px;
 }
 
-.div9 a {
+.themes a {
     transition: filter 0.3s ease;
 }
 
-.div9 a:hover {
+.themes a:hover {
     filter: brightness(70%);
 }
 
@@ -629,4 +766,9 @@ textarea {
     src: url('./fonts/PixelOperatorSC-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: bold;
+}
+
+@font-face {
+    font-family: "Daydream";
+    src: url("./fonts/Daydream.ttf") format();
 }

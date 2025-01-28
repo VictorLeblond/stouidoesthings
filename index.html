@@ -9,23 +9,25 @@
     <script src="./js/script.js"></script>
     <script src="./js/lastfm.js"></script>
     <script src="./js/wobble.js"></script>
+    <script src="./js/imagePreview.js"></script>
     <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
     <script src="https://status.cafe/current-status.js?name=vicleblond" defer></script>
 </head>
 
 <body class="">
+    <div class="background"></div>
     <header>
-        <div class="title-container">
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/v.gif"></span>
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/i.gif"></span>
-            <span><img class="titleLetter dropShadow " src="./sprites/letters/c.gif"></span>
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/l.gif"></span>
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/e.gif"></span>
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/b.gif"></span>
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/l.gif"></span>
-            <span><img class="titleLetter dropShadow " src="./sprites/letters/o.gif"></span>
-            <span><img class="titleLetter dropShadow " src="./sprites/letters/n.gif"></span>
-            <span><img class="titleLetter dropShadow" src="./sprites/letters/d.gif"></span>
+        <div class="title-container dropShadow">
+            <span><img class="titleLetter" src="./sprites/letters/v.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/i.gif"></span>
+            <span><img class="titleLetter " src="./sprites/letters/c.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/l.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/e.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/b.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/l.gif"></span>
+            <span><img class="titleLetter " src="./sprites/letters/o.gif"></span>
+            <span><img class="titleLetter " src="./sprites/letters/n.gif"></span>
+            <span><img class="titleLetter" src="./sprites/letters/d.gif"></span>
         </div>
         <img class="dropShadow" id="platBg" src="./sprites/renders/render-plat.png" style="transform: rotate(15deg);">
         <img class="dropShadow" id="explobotBg" src="./sprites/renders/render-explobot.png">
@@ -45,33 +47,25 @@
                 <div class="welcome">
                     <div class="box">
                         <div class="grid-explobot">
-                            <div class="snippet-gallery" id="mePic">
+                            <div class="" style="width: 315px;  text-align: justify;">
+                                <div class="title" id="wobble" style="padding-bottom: 5px; "> welcome all!</div><br>
+                                <div style="width: 90%;"><p>
+                                    hello everyone! my name is Victor, I'm a 21 year old comp. sci. student from Montreal. I've
+                                    been making games on my own since highschool, my dream is to be able to live from my projects and open up my studio<br><br>
+    
+                                    this is my portfolio website, the nexus of all my creations where you will find games, animations, pixel art, music and more <br><br>
+    
+                                    i'm currently open to work, I have first hand experience in design, art and coding, all my infos are in the about section <br><br>
+    
+                                    I hope you will enjoy discovering this website as much as I had fun making it!</p>
+                                </div>
+                            </div>
+                            <div class="snippet-gallery" style="padding-right: 30px;" id="mePic">
                                 <img src="./sprites/me/me.png" alt="">
                             </div>
-                            <div class="" style="width: 450px; padding-left: 20px; text-align: justify;">
-                                <div class="title" id="wobble" style="padding-bottom: 5px;"> welcome  all!</div><br>
-                                hello everyone! my name is Victor, a 21 year old comp sci student from Montreal. I've been making games on my own since highschool, my dream is the same as every indie game developper, be able to live from my projects and open up my studio<br><br>
-                                
-                                this website is a reminiscence of how the internet used to feel like to me when I was a child, you will find here games, animations, pixel art, music and more, <br><br>
+                        </div>
+                    </div>
 
-                                I hope you will enjoy discovering this website as much as I had fun making it!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box" style="margin-top: 16px;">
-                        <div class="title">snippet of what I do</div><br>
-                        <div class="snippet-gallery">
-                            <img src="./sprites/gallery/Doodle1.png">
-                            <img src="./3dassets/Cocktail.gif">
-                            <img src="./sprites/gallery/Octopus.png">
-                            <img src="./sprites/gallery/Goblin.png">
-                            <img src="./sprites/gallery/pictures/5.jpg">
-                            <img src="./arpgprototype/Pathfinding.gif">
-                            <img src="./2dassets/Guns.png">
-                            <img src="./3dassets/frogman.gif">
-                            <img src="./sprites/gallery/pictures/2.jpg">
-                        </div>
-                    </div>
                 </div>
                 <div class="status">
                     <div class="box">
@@ -104,8 +98,8 @@
                     <div class="box" style="padding: 0;">
                         <div id="guestbookContainer">
                             <img id="guestbookPlat" src="./sprites/plattalking.png" style="width: 100%;">
-                            <div id="guestbookText">please leave a comment on my <a
-                                    href="https://vicleblond.atabook.org/">guestbook</a>!
+                            <div id="guestbookText">feel free to leave a comment on
+                                my <a href="https://vicleblond.atabook.org/">guestbook</a>!
                             </div>
                         </div>
                     </div>
@@ -113,21 +107,53 @@
                 <div class="div7">
                     <div class="box">
                         <img src="./sprites/plat.gif" width="100%">
+
                     </div>
                 </div>
-                <div class="div9">
+                <div class="themes">
                     <div class="box">
                         <div class="title">themes</div><br>
-                        <div style="text-align: center; margin-top: 3px; margin-bottom: 3px;">you can customize this
+                        <div style="text-align: center;">you can customize this
                             site's appearance with these different themes</div><br>
-                        <a class="uiButton" href="#" onclick="switchTheme('explobot')" id=""><img
-                                src="./sprites/citybutton.png"></a>
-                        <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-dark')" id=""><img
-                                src="./sprites/dreamcatchers/dreamcatchersbutton.png"></a>
+                        <div style="display: grid; grid-template-columns: auto auto; padding: 10px; padding-top:5px; gap: 16px; justify-content: center;">
+                            <a class="uiButton" href="#" onclick="switchTheme('explobot')" id=""><img
+                                    src="./sprites/citybutton.png"></a>
+                            <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-dark')" id=""><img
+                                    src="./sprites/dreamcatchers/dreamcatchersbutton.png"></a>
                             <a class="uiButton" href="#" onclick="switchTheme('dreamcatchers-light')" id=""><img
                                     src="./sprites/dreamcatchers/dreamcatchersbutton-2.png"></a>
                             <a class="uiButton" href="#" onclick="switchTheme('standard')" id=""><img
-                                    src="./sprites/hylicsbutton.png"></a>
+                                    src="./sprites/hylicsbutton.png"></a> 
+                            <!--<div class="selector">
+                                <button id="selector-left-arrow" class="selector-arrow">&lt;</button>
+                                <div id="selector-display" class="selector-display"></div>
+                                <button id="selector-right-arrow" class="selector-arrow">&gt;</button>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="inventory" style="height: 420px">
+                    <div class="box" style="height: 100%">
+                        <div class="title">inventory</div><br>
+                    </div>
+                </div>
+                <div class="playExplobot">
+                    <div class="box" style="height: 40px;"></div>
+                </div>
+                <div class="snippet">
+                    <div class="box">
+                        <div class="title">snippet of what I do</div><br>
+                        <div class="snippet-gallery gallery" style="padding: 16px; padding-top: 0px;">
+                            <img src="./sprites/gallery/Doodle1.png">
+                            <img src="./3dassets/Cocktail.gif">
+                            <img src="./sprites/gallery/Octopus.png">
+                            <img src="./sprites/gallery/Goblin.png">
+                            <img src="./sprites/gallery/pictures/5.jpg">
+                            <img src="./arpgprototype/Pathfinding.gif">
+                            <img src="./2dassets/Guns.png">
+                            <img src="./3dassets/frogman.gif">
+                            <img src="./sprites/gallery/pictures/2.jpg">
+                        </div>
                     </div>
                 </div>
                 <div class="lastPlayed">
@@ -202,6 +228,7 @@
                     <div class="box">
 
                         <div class="tab-container">
+                            <div class="title">logs</div><br>
                             <div class=tabs>
                                 <button class="tab-link-logs" data-tab="updates">updates</button>
                                 <button class="tab-link-logs" data-tab="todos">todos</button>
@@ -232,16 +259,16 @@
                             <br>
                             made with blender, using standard topology, UV mapping and pixel art<br>
 
-                            <div class="displayer">
-                                <img src="./3dassets/bottles.gif" class="box">
-                                <img src="./3dassets/frog.gif" class="box">
-                                <img src="./3dassets/frog2.gif" class="box">
-                                <img src="./3dassets/human2.1.gif" class="box">
-                                <img src="./3dassets/human3.1.gif" class="box">
-                                <img src="./3dassets/longman.gif" class="box">
-                                <img src="./3dassets/frogman.gif" class="box">
-                                <img src="./3dassets/WhiteDude5.gif" class="box">
-                                <img src="./3dassets/Cocktail.gif" class="box">
+                            <div class="displayer gallery">
+                                <img src="./3dassets/bottles.gif" class="box-outlineless">
+                                <img src="./3dassets/frog.gif" class="box-outlineless">
+                                <img src="./3dassets/frog2.gif" class="box-outlineless">
+                                <img src="./3dassets/human2.1.gif" class="box-outlineless">
+                                <img src="./3dassets/human3.1.gif" class="box-outlineless">
+                                <img src="./3dassets/longman.gif" class="box-outlineless">
+                                <img src="./3dassets/frogman.gif" class="box-outlineless">
+                                <img src="./3dassets/WhiteDude5.gif" class="box-outlineless">
+                                <img src="./3dassets/Cocktail.gif" class="box-outlineless">
                             </div>
                             <div class="rightSided"></div>
                             <br>
@@ -293,54 +320,55 @@
                             pixel art is where I started doing art back in 2018 (i was 13-14 yrs old) on aseprite, here
                             are some of my favorites
                             <div class="displayer">
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./sprites/gallery/NativeAnim.gif" class="display">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./sprites/gallery/D2YbXP0XQAIY-tK.png" class="display">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./sprites/gallery/Sprite-0001-export.png" class="display">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./sprites/gallery/Goblin.png" class="display">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./sprites/gallery/Hylics.png" class="display">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./sprites/gallery/Quack.png" class="display">
                                 </div>
                             </div>
-                            <div>
+                            <div class="gallery">
                                 <div class="title">Sprites</div><br>
                                 these were made in the idea of making a top down rpg with gunplay similar to enter the
                                 gungeon (fusion with fallout), I will talk more about this project in the game section
                                 of
                                 this gallery.
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./2dassets/Guns.png" width="100%">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./2dassets/portaits.png" width="100%">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./2dassets/npcs.png" width="100%">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./2dassets/TileSet.png" width="100%">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./2dassets/Props.png" width="100%">
                                 </div>
-                                <div class="box">
+                                <div class="box-outlineless">
                                     <img src="./2dassets/StatusEffectIcon.png">
                                     let me know if you'd like an emoji pack or smth
                                 </div><br>
                                 <div class="title">Others</div>
                                 <br>
                                 <div class="grid-explobot">
-                                    <div class="box"><img src="./sprites/gallery/Doodle1.png" width="100%"></div>
+                                    <div class="box-outlineless"><img src="./sprites/gallery/Doodle1.png" width="100%">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +380,8 @@
 
                             this is the project that me and my roommate have been working on<br><br>
                             the game is about penguins in the desert fighting other animals to survive<br><br>
-                            the best way to vizualize the game is to think of a mix between hotline miami, sekiro and enter the gungeon.<br><br>
+                            the best way to vizualize the game is to think of a mix between hotline miami, sekiro and
+                            enter the gungeon.<br><br>
 
                             <div class="grid-explobot">
                                 <div class="box">
@@ -384,7 +413,8 @@
                             I plan on making a dedicated page for this game on this website, just like the 2024 version
                             <br><br>
                             made with unity and aseprite, help with sound from friends<br><br>
-                            I am currently working on a dedicated web page for explobot, where you will be able have all the infos about the game and play it<br><br>
+                            I am currently working on a dedicated web page for explobot, where you will be able have all
+                            the infos about the game and play it<br><br>
                             althought you can play it <a href="https://vicleblond.com/explobot/play/"> here!</a><br><br>
                             <div class="grid-explobot">
                                 <div class="box">
@@ -513,19 +543,31 @@
                                 <img id="portait" src="./me.jpg">
                                 <div id="desc">Victor Leblond<br>
                                     21 <br>M<br>
-                                    <div>
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/adobe-after-effects.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/adobe-animate.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/adobe-photoshop.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/adobe-premiere-pro.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/android.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/aseprite.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/audacity.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/blender.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/notepad-plus-plus.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/paint-tool-sai.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/opera.png">
-                                        <img src="https://melankorin.net/assets/img/resources/software-buttons/vs-code.png">
+                                    <div class="softwareUsed">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/adobe-after-effects.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/adobe-animate.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/adobe-photoshop.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/adobe-premiere-pro.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/android.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/aseprite.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/audacity.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/blender.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/notepad-plus-plus.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/paint-tool-sai.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/opera.png">
+                                        <img
+                                            src="https://melankorin.net/assets/img/resources/software-buttons/vs-code.png">
                                     </div>
                                 </div>
                             </div>
@@ -594,16 +636,16 @@
                         </ul>
                     </div>
                     <div class="box" style="margin-top: 5px;">
-
+                        bonjour
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        vicleblond.com @ 2025
-    </footer>
-    <div id="winamp-container"></div>
+        <div class="modal" id="preview">
+            <span class="close" id="previewClose">&times;</span>
+            <img src="" alt="Fullscreen Image" id="previewImage">
+        </div>
+        <div id="winamp-container"></div>
 </body>
 
 </html>

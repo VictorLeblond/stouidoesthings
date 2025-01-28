@@ -1,6 +1,11 @@
 
 <changelogs>
 <log>
+<title>v1.1.28</title>
+    <description>compact layout, new themes, click on images for bigger preview, inventory still WIP</description>
+    <date>2025-01-28</date>
+</log>
+<log>
 <title>v1.1.21</title>
     <description>huge revamp, loads of sprites everywhere, added a bunch in about</description>
     <date>2025-01-21</date>
